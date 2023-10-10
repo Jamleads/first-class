@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 function BoardData({
   iconStyle,
@@ -10,8 +10,21 @@ function BoardData({
   secondDataValue,
   secondDataSpan,
 }) {
+  const [xy, setXy] = useState(true);
+
+  const test = () => {
+    console.log("I am executing");
+    setXy(!xy);
+    console.log(xy);
+  };
+
   return (
-    <div className="w-[500px] bg-mainWhite rounded-2xl px-10 py-5 mt-10">
+    <div
+      className={`w-[500px] rounded-2xl px-10 py-5 mt-10 ${
+        xy ? "bg-ourRed" : "bg-mainWhite"
+      }`}
+      onMouseEnter={test}
+    >
       <div className="flex items-center justify-between">
         <div
           className={`icon-wrap w-[50px] h-[50px] ${iconStyle} flex items-center justify-center`}
@@ -48,3 +61,6 @@ function BoardData({
 }
 
 export default BoardData;
+
+// USE STATE
+// EVENT IN REACT

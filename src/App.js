@@ -1,10 +1,13 @@
 import BoardData from "./Components/BoardData";
+import Details from "./Components/Details";
+import SidebBar from "./Components/SidebBar";
 import logo from "./logo.svg";
 
 function App() {
   return (
-    <div className="px-20">
-      <div className="flex justify-between items-center gap-10">
+    <>
+      <SidebBar />
+      {/* <div className="flex justify-between items-center gap-10">
         <BoardData
           iconStyle="bg-ourRed"
           firstData="Sales"
@@ -35,9 +38,15 @@ function App() {
           secondDataSpan="+20.00%"
           icon={logo}
         />
-      </div>
-    </div>
+      </div> */}
+
+      {/* <div>
+        <Details />
+      </div> */}
+    </>
   );
 }
+
+// React Router
 
 export default App;

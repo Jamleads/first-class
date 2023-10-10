@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: aqua;
-}
-
 .text {
   color: #5570f11f;
   color: #ff0000;
