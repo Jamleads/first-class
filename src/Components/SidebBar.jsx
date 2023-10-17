@@ -23,7 +23,7 @@ const SidebBar = () => {
         <img src={toggleIcon} alt="toggleIcon" className="w-[80%]" />
       </div>
 
-      <div className="bg-yellow-400">
+      <div className="">
         <div className="brand flex items-center gap-5">
           <img src={Logo} alt="BrandLogo" />
           <h2>Metric</h2>
@@ -31,7 +31,11 @@ const SidebBar = () => {
 
         <div className="sideNavList">
           {DummyData.map((navLink) => (
-            <NavList key={navLink.id} {...navLink} />
+            <NavList
+              key={navLink.id}
+              {...navLink}
+              navcontent={openNav ? navLink.navText : ""}
+            />
           ))}
         </div>
       </div>

@@ -1,12 +1,14 @@
 import React from "react";
-import { toggleIcon } from "../Assets";
+import { Link } from "react-router-dom";
 
-const NavList = ({ icon, navText }) => {
+const NavList = ({ icon, navcontent, iconAlt, destination }) => {
   return (
-    <div className="list flex items-center gap-5">
-      <img src={icon} alt="" />
-      <p className="text-2xl">{navText}</p>
-    </div>
+    <Link to={destination}>
+      <div className="list flex items-center gap-5 ">
+        <img src={icon} alt={iconAlt} />
+        <p className="text-2xl">{navcontent}</p>
+      </div>
+    </Link>
   );
 };
 

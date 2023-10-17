@@ -20,14 +20,14 @@ function BoardData({
 
   return (
     <div
-      className={`w-[500px] rounded-2xl px-10 py-5 mt-10 ${
+      className={`w-[30%] rounded-2xl px-10 py-5 mt-10 ${
         xy ? "bg-ourRed" : "bg-mainWhite"
       }`}
       onMouseEnter={test}
     >
       <div className="flex items-center justify-between">
         <div
-          className={`icon-wrap w-[50px] h-[50px] ${iconStyle} flex items-center justify-center`}
+          className={`icon-wrap w-[40px] h-[40px] ${iconStyle} flex items-center justify-center`}
         >
           <img src={icon} alt="" className="w-[90%]" />
         </div>
@@ -39,7 +39,7 @@ function BoardData({
         </select>
       </div>
 
-      <div className="mt-10 flex items-center justify-between">
+      <div className="mt-2 flex items-center justify-between">
         <div className="w-1/2">
           <p className="text-gray-400 text-2xl">{firstData}</p>
           <p>
