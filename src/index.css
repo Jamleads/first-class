@@ -9,3 +9,9 @@
 .list {
   cursor: pointer;
 }
+.chatSide {
+  height: 600px !important;
+}
+.chatSide .chatSideDiv {
+  height: 50%;
+}

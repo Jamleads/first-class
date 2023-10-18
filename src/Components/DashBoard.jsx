@@ -4,13 +4,14 @@ import BoardData from "./BoardData";
 import { Logo } from "../Assets";
 import Product from "./Product";
 import { productData } from "../Assets/DumyData";
+import { Chart } from "chart.js";
 
 const DashBoard = () => {
   return (
     <div className="h-screen">
       <Header currentPage="Dashboard" />
       <main className="w-full h-[85vh] px-5">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center gap-5 mt-5">
           <BoardData
             iconStyle="bg-ourRed"
             firstData="Sales"
@@ -19,6 +20,7 @@ const DashBoard = () => {
             secondDataValue="450"
             secondDataSpan="+20.00%"
             icon={Logo}
+            compStyle="w-[30%]"
           />
           <BoardData
             iconStyle="bg-black"
@@ -29,6 +31,7 @@ const DashBoard = () => {
             secondDataValue="1,800"
             secondDataSpan="85.00%"
             icon={Logo}
+            compStyle="w-[30%]"
           />
           <BoardData
             iconStyle="bg-ourRed"
@@ -38,18 +41,40 @@ const DashBoard = () => {
             secondDataValue="450"
             secondDataSpan="+20.00%"
             icon={Logo}
+            compStyle="w-[40%]"
           />
         </div>
 
-        <div className="bg-red-300 flex justify-between mt-5">
-          <div className="w-[60%] bg-yellow-300">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
-            inventore earum magnam mollitia officia quasi obcaecati. Labore quam
-            soluta ratione, repellendus blanditiis unde praesentium sapiente
-            dolor obcaecati nobis, consequatur quisquam!
+        <div className="flex justify-between mt-5 gap-5">
+          <div className="chatSide w-[60%] flex flex-col gap-5">
+            <div className="chatSideDiv flex gap-5">
+              <div className="w-1/2 bg-blue-100"></div>
+
+              <div className="w-1/2 h-full flex flex-col gap-5">
+                <BoardData
+                  compStyle="w-full h-1/2 "
+                  iconStyle=""
+                  icon={Logo}
+                  firstData="All Product"
+                  firstDataValue="45"
+                  secondData="Volume"
+                  secondDataValue="32"
+                  secondDataSpan="+24%"
+                />
+
+                <BoardData compStyle="w-full h-1/2" iconStyle="" icon={Logo} />
+              </div>
+            </div>
+
+            <div className="bg-red-500 chatSideDiv">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              iusto nihil aperiam. Consequuntur voluptatum dicta culpa ducimus
+              enim est id distinctio esse deserunt sapiente facilis praesentium,
+              corrupti, adipisci ratione natus!
+            </div>
           </div>
 
-          <div className="w-[40%] h-[550px] bg-blue-500 p-5">
+          <div className="w-[40%] h-[600px] bg-blue-500 p-5">
             <div className="bg-mainWhite rounded-lg h-full">
               <div className="h-[15%] bg-yellow-300 px-5">
                 <p>Recent Order</p>

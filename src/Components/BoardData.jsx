@@ -9,6 +9,7 @@ function BoardData({
   secondData,
   secondDataValue,
   secondDataSpan,
+  compStyle,
 }) {
   const [xy, setXy] = useState(true);
 
@@ -20,7 +21,7 @@ function BoardData({
 
   return (
     <div
-      className={`w-[30%] rounded-2xl px-10 py-5 mt-10 ${
+      className={`${compStyle} rounded-2xl px-10 py-5 ${
         xy ? "bg-ourRed" : "bg-mainWhite"
       }`}
       onMouseEnter={test}
