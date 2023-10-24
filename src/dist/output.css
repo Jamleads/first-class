@@ -600,16 +600,8 @@ video {
   top: 80px;
 }
 
-.-mt-5 {
-  margin-top: -1.25rem;
-}
-
 .ml-5 {
   margin-left: 1.25rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
 }
 
 .mt-2 {
@@ -620,12 +612,12 @@ video {
   margin-top: 1.25rem;
 }
 
-.-mt-10 {
-  margin-top: -2.5rem;
-}
-
 .flex {
   display: flex;
+}
+
+.h-1\/2 {
+  height: 50%;
 }
 
 .h-\[15\%\] {
@@ -636,12 +628,20 @@ video {
   height: 15vh;
 }
 
+.h-\[300px\] {
+  height: 300px;
+}
+
 .h-\[40px\] {
   height: 40px;
 }
 
-.h-\[550px\] {
-  height: 550px;
+.h-\[500px\] {
+  height: 500px;
+}
+
+.h-\[600px\] {
+  height: 600px;
 }
 
 .h-\[85vh\] {
@@ -656,12 +656,24 @@ video {
   height: 100vh;
 }
 
-.h-\[600px\] {
-  height: 600px;
+.h-\[1000px\] {
+  height: 1000px;
 }
 
-.h-1\/2 {
-  height: 50%;
+.h-\[200px\] {
+  height: 200px;
+}
+
+.h-\[350px\] {
+  height: 350px;
+}
+
+.h-\[320px\] {
+  height: 320px;
+}
+
+.h-\[310px\] {
+  height: 310px;
 }
 
 .w-1\/2 {
@@ -670,6 +682,10 @@ video {
 
 .w-\[10\%\] {
   width: 10%;
+}
+
+.w-\[100\%\] {
+  width: 100%;
 }
 
 .w-\[20\%\] {
@@ -755,11 +771,6 @@ video {
   background-color: rgb(219 234 254 / var(--tw-bg-opacity));
 }
 
-.bg-blue-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
-}
-
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
@@ -775,14 +786,14 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-red-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+}
+
 .bg-red-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 202 202 / var(--tw-bg-opacity));
-}
-
-.bg-red-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 
 .bg-red-500 {
@@ -800,18 +811,9 @@ video {
   background-color: rgb(253 224 71 / var(--tw-bg-opacity));
 }
 
-.bg-yellow-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
-}
-
 .bg-yellow-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
-}
-
-.p-1 {
-  padding: 0.25rem;
 }
 
 .p-2 {

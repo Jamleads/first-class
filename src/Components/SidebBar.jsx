@@ -30,7 +30,7 @@ const SidebBar = () => {
         </div>
 
         <div className="sideNavList">
-          {DummyData.map((navLink) => (
+          {DummyData?.map((navLink) => (
             <NavList
               key={navLink.id}
               {...navLink}

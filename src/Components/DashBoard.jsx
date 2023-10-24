@@ -5,6 +5,8 @@ import { Logo } from "../Assets";
 import Product from "./Product";
 import { productData } from "../Assets/DumyData";
 import { Chart } from "chart.js";
+import DoughnutChart from "./DoughnutChart";
+import BarChart from "./BarChart";
 
 const DashBoard = () => {
   return (
@@ -48,7 +50,9 @@ const DashBoard = () => {
         <div className="flex justify-between mt-5 gap-5">
           <div className="chatSide w-[60%] flex flex-col gap-5">
             <div className="chatSideDiv flex gap-5">
-              <div className="w-1/2 bg-blue-100"></div>
+              <div className="w-1/2 bg-blue-100">
+                <DoughnutChart />
+              </div>
 
               <div className="w-1/2 h-full flex flex-col gap-5">
                 <BoardData
@@ -66,11 +70,9 @@ const DashBoard = () => {
               </div>
             </div>
 
-            <div className="bg-red-500 chatSideDiv">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-              iusto nihil aperiam. Consequuntur voluptatum dicta culpa ducimus
-              enim est id distinctio esse deserunt sapiente facilis praesentium,
-              corrupti, adipisci ratione natus!
+            <div className="bg-red-100 flex items-center justify-center">
+              {/* <DoughnutChart /> */}
+              <BarChart />
             </div>
           </div>
 
@@ -81,7 +83,7 @@ const DashBoard = () => {
               </div>
 
               <div>
-                {productData.map((product) => (
+                {productData?.map((product) => (
                   <Product
                     key={product.id}
                     {...product}
