@@ -1,7 +1,6 @@
 import Layout from "./Components/Layout";
 import Customer from "./Components/Customer";
 import DashBoard from "./Components/DashBoard";
-// import Inventory from "./Components/Inventory";
 import Order from "./Components/Order";
 import {
   Route,
@@ -9,7 +8,6 @@ import {
   createRoutesFromElements,
   RouterProvider,
 } from "react-router-dom";
-import Header from "./Components/Header";
 import Inventory from "./Components/Inventory";
 import Conversation from "./Components/Conversation";
 

@@ -7,30 +7,35 @@ export const DummyData = [
     iconAlt: "toogleIcon",
     navText: "Dashboard",
     destination: "/",
+    customStyle: "bg-red-500",
   },
   {
     id: 2,
     icon: Logo,
     navText: "Order",
     destination: "/order",
+    customStyle: "bg-red-100",
   },
   {
     id: 3,
     icon: toggleIcon,
     navText: "Customers",
     destination: "/customer",
+    customStyle: "bg-blue-500",
   },
   {
     id: 4,
     icon: Logo,
     navText: "Inventory",
     destination: "/inventory",
+    customStyle: "bg-red-300",
   },
   {
     id: 5,
     icon: Logo,
     navText: "Conversation",
     destination: "/conversation",
+    customStyle: "bg-blue-300",
   },
 ];
 

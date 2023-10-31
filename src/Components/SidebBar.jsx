@@ -12,7 +12,7 @@ const SidebBar = () => {
 
   return (
     <div
-      className={`px-10 relative h-screen bg-red-500 shadow-lg ${
+      className={`px-10 relative h-screen shadow-lg ${
         openNav ? "w-[20%]" : "w-[10%]"
       }`}
     >
